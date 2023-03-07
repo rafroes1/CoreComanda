@@ -33,6 +33,14 @@ extension Bill {
         date ?? Date.now
     }
     
+    public var formattedDate: String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "pt_BR")
+        formatter.timeZone = TimeZone(identifier: "GMT-3")
+        formatter.dateFormat = "EEEE, MMM d, yyyy, HH:mm"
+        return formatter.string(from: unwrappedDate)
+    }
+    
     public var productsArray: [Product] {
         let set = products as? Set<Product> ?? []
         

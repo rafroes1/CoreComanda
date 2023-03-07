@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct ProductsView: View {
+    // MARK: - PROPERTIES
     @Environment(\.managedObjectContext) var managedObjectContext
     
-    @Binding var bill: Bill
+    @Binding var selectedBill: Bill
     @Binding var showingProductScreen: Bool
     
     @State private var refresher = UUID()
     
-    
+    // MARK: - FUNCTIONS
     func deleteProduct (offsets: IndexSet) {
         for offset in offsets {
-            let product = bill.productsArray[offset]
+            let product = selectedBill.productsArray[offset]
             managedObjectContext.delete(product)
         }
         
@@ -36,19 +37,20 @@ struct ProductsView: View {
         product.price = Double.random(in: 0.5...10)
         product.quantity = Int32.random(in: 0...10)
         product.bill = Bill(context: managedObjectContext)
-        product.bill?.id = bill.id
-        product.bill?.name = bill.name
-        product.bill?.date = bill.date
+        product.bill?.id = selectedBill.id
+        product.bill?.name = selectedBill.name
+        product.bill?.date = selectedBill.date
 
         try? managedObjectContext.save()
         forceRefresh()
     }
     
+    // MARK: - BODY
     var body: some View {
         VStack(spacing: 8) {
             
             List {
-                ForEach(bill.productsArray, id: \.id) { product in
+                ForEach(selectedBill.productsArray, id: \.id) { product in
                     VStack {
                         Text("id -> \(product.unwrappedId)")
                         HStack (spacing: 8, content: {
