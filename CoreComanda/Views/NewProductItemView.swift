@@ -1,5 +1,5 @@
 //
-//  NewBillsItemView.swift
+//  NewProductItemView.swift
 //  CoreComanda
 //
 //  Created by Rafael Carvalho on 07/03/23.
@@ -7,41 +7,59 @@
 
 import SwiftUI
 
-struct NewBillsItemView: View {
+struct NewProductItemView: View {
     // MARK: - PROPERTIES
     @Environment(\.managedObjectContext) var managedObjectContext
     
     @Binding var isShowing: Bool
-    @State private var billName: String = ""
+    @Binding var selectedBill: Bill
+    @State private var productName: String = ""
+    @State private var productPrice: String = ""
+    
     
     private var isButtonDisabled: Bool {
-        billName.isEmpty
+        if productName.isEmpty || productPrice.isEmpty {
+            return true
+        } else { return false }
     }
     
     // MARK: - FUNCTIONS
-    private func addBill () {
+    private func addProduct () {
         withAnimation {
-        
-            let bill = Bill(context: managedObjectContext)
-            bill.id = UUID()
-            bill.name = billName
-            bill.date = Date.now
-        
+            let product = Product(context: managedObjectContext)
+            product.id = UUID()
+            product.name = productName
+            product.price = Double(productPrice) ?? 0.0
+            product.quantity = 1
+            product.bill = selectedBill
+            product.bill?.id = selectedBill.id
+            product.bill?.date = selectedBill.date
+            product.bill?.name = selectedBill.unwrappedName
+            
             try? managedObjectContext.save()
             
-            billName = ""
+            productName = ""
             hideKeyboard()
             isShowing = false
         }
     }
     
-    // MARK: - BODY
     var body: some View {
-        VStack(content: {
+        VStack {
             Spacer()
             
-            VStack(spacing: 16, content: {
-                TextField("Nova Comanda", text: $billName)
+            VStack(spacing: 16) {
+                TextField("Novo Produto", text: $productName)
+                    .foregroundColor(.white)
+                    .font(.system(size: 18, weight: .bold, design: .rounded))
+                    .padding()
+                    .background(
+                        Color(UIColor.tertiarySystemBackground)
+                    )
+                    .cornerRadius(10)
+                
+                TextField("Valor do Produto", text: $productPrice)
+                    .keyboardType(.decimalPad)
                     .foregroundColor(.white)
                     .font(.system(size: 18, weight: .bold, design: .rounded))
                     .padding()
@@ -51,11 +69,11 @@ struct NewBillsItemView: View {
                     .cornerRadius(10)
                 
                 Button(action: {
-                    addBill()
+                    addProduct()
                     feedback.impactOccurred()
                 }, label: {
                     Spacer()
-                    Text("CRIAR")
+                    Text("Adicionar")
                         .font(.system(size: 18, weight: .bold, design: .rounded))
                     Spacer()
                 })
@@ -63,7 +81,7 @@ struct NewBillsItemView: View {
                 .padding()
                 .background(isButtonDisabled ? Color.gray : comandinhaGold)
                 .cornerRadius(10)
-            })
+            }
             .padding(.horizontal)
             .padding(.vertical, 20)
             .background(
@@ -72,7 +90,7 @@ struct NewBillsItemView: View {
             .cornerRadius(16)
             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.65), radius: 24)
             .frame(maxWidth: 640)
-        })
+        }
         .padding()
     }
 }

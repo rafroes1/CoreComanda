@@ -24,6 +24,9 @@
 		898F759629B784000050DE6A /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759529B784000050DE6A /* BlankView.swift */; };
 		898F759829B7853D0050DE6A /* NewBillsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759729B7853D0050DE6A /* NewBillsItemView.swift */; };
 		898F759A29B788470050DE6A /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759929B788470050DE6A /* HideKeyboardExtension.swift */; };
+		898F759C29B7982E0050DE6A /* NewProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759B29B7982E0050DE6A /* NewProductItemView.swift */; };
+		898F759E29B7B8200050DE6A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759D29B7B8200050DE6A /* CounterView.swift */; };
+		898F75A029BA6F6E0050DE6A /* CalculateTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759F29BA6F6E0050DE6A /* CalculateTotalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		898F759529B784000050DE6A /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		898F759729B7853D0050DE6A /* NewBillsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBillsItemView.swift; sourceTree = "<group>"; };
 		898F759929B788470050DE6A /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		898F759B29B7982E0050DE6A /* NewProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductItemView.swift; sourceTree = "<group>"; };
+		898F759D29B7B8200050DE6A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		898F759F29BA6F6E0050DE6A /* CalculateTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTotalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,9 @@
 				89421D5B29B77953009E21C2 /* LogoView.swift */,
 				898F759529B784000050DE6A /* BlankView.swift */,
 				898F759729B7853D0050DE6A /* NewBillsItemView.swift */,
+				898F759B29B7982E0050DE6A /* NewProductItemView.swift */,
+				898F759D29B7B8200050DE6A /* CounterView.swift */,
+				898F759F29BA6F6E0050DE6A /* CalculateTotalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89421D5129B685A6009E21C2 /* Bill+CoreDataClass.swift in Sources */,
+				898F759E29B7B8200050DE6A /* CounterView.swift in Sources */,
+				898F75A029BA6F6E0050DE6A /* CalculateTotalView.swift in Sources */,
 				89421D3A29B23992009E21C2 /* ContentView.swift in Sources */,
 				898F759A29B788470050DE6A /* HideKeyboardExtension.swift in Sources */,
 				89421D5C29B77953009E21C2 /* LogoView.swift in Sources */,
@@ -226,6 +237,7 @@
 				89421D5229B685A6009E21C2 /* Bill+CoreDataProperties.swift in Sources */,
 				898F759829B7853D0050DE6A /* NewBillsItemView.swift in Sources */,
 				89421D3829B23992009E21C2 /* CoreComandaApp.swift in Sources */,
+				898F759C29B7982E0050DE6A /* NewProductItemView.swift in Sources */,
 				89421D4829B239D7009E21C2 /* Comanda.xcdatamodeld in Sources */,
 				89421D4C29B24133009E21C2 /* ProductsView.swift in Sources */,
 				898F759429B77CE30050DE6A /* BillsView.swift in Sources */,
@@ -364,6 +376,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreComanda/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Comandinha;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -393,6 +406,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreComanda/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Comandinha;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

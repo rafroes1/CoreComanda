@@ -67,7 +67,6 @@ struct BillsView: View {
                     Text("Nova Comanda")
                         .font(.system(size: 18, weight: .bold, design: .rounded))
                 })
-                .foregroundColor(.white)
                 .padding(.horizontal, 20)
                 .padding(.vertical, 15)
                 .background(
