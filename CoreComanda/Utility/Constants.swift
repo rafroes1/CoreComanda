@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 
 let comandinhaGold: Color = Color("ComandinhaGold")
+let comandinhaBlack: Color = Color("ComandinhaBlack")
+let comandinhaOrange: Color = Color("ComandinhaOrange")
+let comandinhaBrown: Color = Color("ComandinhaBrown")
+let comandinhaPastel: Color = Color("ComandinhaPastel")
 
 let feedback = UIImpactFeedbackGenerator(style: .medium)
 

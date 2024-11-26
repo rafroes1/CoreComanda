@@ -13,7 +13,7 @@ struct LogoView: View {
             Text("Comandinha".uppercased())
                 .font(.title3)
             
-            Image("beer-mug-gold")
+            Image("comanda-orange")
                 .resizable()
                 .frame(width: 30, height: 30)
         })

@@ -79,7 +79,7 @@ struct NewProductItemView: View {
                 })
                 .disabled(isButtonDisabled)
                 .padding()
-                .background(isButtonDisabled ? Color.gray : comandinhaGold)
+                .background(isButtonDisabled ? Color.gray : comandinhaOrange)
                 .cornerRadius(10)
             }
             .padding(.horizontal)

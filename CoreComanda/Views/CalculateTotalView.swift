@@ -67,7 +67,7 @@ struct CalculateTotalView: View {
                     Spacer()
                 })
                 .padding()
-                .background(comandinhaGold)
+                .background(comandinhaOrange)
                 .cornerRadius(10)
             }
             .padding(.horizontal)

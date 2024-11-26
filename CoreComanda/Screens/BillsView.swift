@@ -40,7 +40,7 @@ struct BillsView: View {
                     ForEach(bills, id: \.id) { bill in
                         VStack (alignment: .leading, spacing: 8, content: {
                             Text("\(bill.unwrappedName)".capitalized)
-                                .foregroundColor(comandinhaGold)
+                                .foregroundColor(comandinhaOrange)
                                 .font(.headline)
                                 .fontWeight(.bold)
                             Text("\(bill.formattedDate)".capitalized)
@@ -70,7 +70,7 @@ struct BillsView: View {
                 .padding(.horizontal, 20)
                 .padding(.vertical, 15)
                 .background(
-                    comandinhaGold.clipShape(Capsule())
+                    comandinhaOrange.clipShape(Capsule())
                 )
                 .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 8, x: 0.0, y: 4.0)
                 
@@ -82,7 +82,7 @@ struct BillsView: View {
             })
             .blur(radius: showNewBillItem ? 8.0 : 0, opaque: false)
             .transition(.move(edge: .bottom))
-            .animation(.easeOut(duration: 0.5))
+            .animation(.easeOut(duration: 0.5), value: showNewBillItem)
             
             if showNewBillItem {
                 BlankView()

@@ -13,7 +13,7 @@ struct BlankView: View {
             Spacer()
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-        .background(.black)
+        .background(comandinhaBlack)
         .opacity(0.3)
         .blendMode(.overlay)
         .edgesIgnoringSafeArea(.all)

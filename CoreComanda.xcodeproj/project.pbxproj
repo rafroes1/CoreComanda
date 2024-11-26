@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890EF6F22AE1AA9B007F0E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890EF6F12AE1AA9B007F0E1F /* LaunchScreen.storyboard */; };
 		89421D3829B23992009E21C2 /* CoreComandaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89421D3729B23992009E21C2 /* CoreComandaApp.swift */; };
 		89421D3A29B23992009E21C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89421D3929B23992009E21C2 /* ContentView.swift */; };
 		89421D3C29B23994009E21C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89421D3B29B23994009E21C2 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890EF6F12AE1AA9B007F0E1F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89421D3429B23992009E21C2 /* CoreComanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreComanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89421D3729B23992009E21C2 /* CoreComandaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComandaApp.swift; sourceTree = "<group>"; };
 		89421D3929B23992009E21C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				89421D3B29B23994009E21C2 /* Assets.xcassets */,
 				89421D4529B239B5009E21C2 /* Coredata */,
 				89421D5829B7780D009E21C2 /* Info.plist */,
+				890EF6F12AE1AA9B007F0E1F /* LaunchScreen.storyboard */,
 				89421D3D29B23994009E21C2 /* Preview Content */,
 				89421D5529B7766B009E21C2 /* Screens */,
 				89421D5D29B77A72009E21C2 /* Utility */,
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890EF6F22AE1AA9B007F0E1F /* LaunchScreen.storyboard in Resources */,
 				89421D3F29B23994009E21C2 /* Preview Assets.xcassets in Resources */,
 				89421D3C29B23994009E21C2 /* Assets.xcassets in Resources */,
 			);
@@ -373,12 +377,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreComanda/Preview Content\"";
+				DEVELOPMENT_TEAM = G4LBBXE2YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreComanda/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Comandinha;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -403,12 +409,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreComanda/Preview Content\"";
+				DEVELOPMENT_TEAM = G4LBBXE2YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreComanda/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Comandinha;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

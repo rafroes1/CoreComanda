@@ -38,11 +38,11 @@ struct ProductsView: View {
                     }, label: {
                         HStack {
                             Image(systemName: "chevron.left")
-                                .foregroundColor(comandinhaGold)
+                                .foregroundColor(comandinhaOrange)
                                 .frame(width: 30, height: 30)
                             
                             Text("Voltar")
-                                .foregroundColor(comandinhaGold)
+                                .foregroundColor(comandinhaOrange)
                                 .offset(x: -12)
                         }
                     })
@@ -61,7 +61,7 @@ struct ProductsView: View {
                         feedback.impactOccurred()
                     }, label: {
                         Image(systemName: "plus.app")
-                            .foregroundColor(comandinhaGold)
+                            .foregroundColor(comandinhaOrange)
                             .frame(width: 38, height: 38)
                     })
                 }
@@ -72,7 +72,7 @@ struct ProductsView: View {
                             HStack (spacing: 16){
                                 VStack(alignment: .leading, spacing: 5) {
                                     Text(product.unwrappedName)
-                                        .foregroundColor(comandinhaGold)
+                                        .foregroundColor(comandinhaOrange)
                                         .font(.headline)
                                     Text("Preço un.: \(String(format: "R$ %.2f", product.price))")
                                         .font(.footnote)
@@ -105,7 +105,7 @@ struct ProductsView: View {
             })
             .blur(radius: showNewProductItem ? 8.0 : 0, opaque: false)
             .transition(.move(edge: .bottom))
-            .animation(.easeOut(duration: 0.5))
+            .animation(.easeOut(duration: 0.5), value: showNewProductItem)
             
             if showNewProductItem {
                 BlankView()

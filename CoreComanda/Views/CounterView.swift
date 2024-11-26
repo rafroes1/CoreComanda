@@ -20,7 +20,7 @@ struct CounterView: View {
                 try? self.managedObjectContext.save()
             }, label: {
                 Image(systemName: "plus")
-                    .foregroundColor(comandinhaGold)
+                    .foregroundColor(comandinhaOrange)
                     .frame(width: 25, height: 25)
             })
             .buttonStyle(BorderlessButtonStyle())
@@ -34,7 +34,7 @@ struct CounterView: View {
                 try? self.managedObjectContext.save()
             }, label: {
                 Image(systemName: "minus")
-                    .foregroundColor(comandinhaGold)
+                    .foregroundColor(comandinhaOrange)
                     .frame(width: 25, height: 25)
             })
             .buttonStyle(BorderlessButtonStyle())
