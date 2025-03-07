@@ -20,6 +20,7 @@ extension Bill {
     @NSManaged public var name: String?
     @NSManaged public var date: Date?
     @NSManaged public var products: NSSet?
+    @NSManaged public var lastTotal: Double
 
     public var unwrappedID: UUID {
         id ?? UUID()
@@ -31,6 +32,10 @@ extension Bill {
     
     public var unwrappedDate: Date {
         date ?? Date.now
+    }
+    
+    public var unwrappedTotal : Double {
+        lastTotal
     }
     
     public var formattedDate: String {

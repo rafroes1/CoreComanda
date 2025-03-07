@@ -29,7 +29,7 @@ struct NewProductItemView: View {
             let product = Product(context: managedObjectContext)
             product.id = UUID()
             product.name = productName
-            product.price = Double(productPrice) ?? 0.0
+            product.price = Double(productPrice.replacingOccurrences(of: ",", with: ".")) ?? 0.0
             product.quantity = 1
             product.bill = selectedBill
             product.bill?.id = selectedBill.id

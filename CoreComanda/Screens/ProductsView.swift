@@ -38,31 +38,37 @@ struct ProductsView: View {
                     }, label: {
                         HStack {
                             Image(systemName: "chevron.left")
-                                .foregroundColor(comandinhaOrange)
-                                .frame(width: 30, height: 30)
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundStyle(comandinhaOrange)
+                                .frame(width: 20, height: 20)
+                                .padding(.leading, 20)
                             
                             Text("Voltar")
                                 .foregroundColor(comandinhaOrange)
-                                .offset(x: -12)
+                                .font(.headline)
                         }
                     })
                     
                     Spacer()
                     
                     Text(selectedBill.unwrappedName.capitalized)
-                        .font(.title2)
+                        .font(.title)
                         .fontWeight(.semibold)
+                        .offset(x: -20)
                     
-                    Spacer()
-                    Spacer()
+                   Spacer()
                     
                     Button(action: {
                         showNewProductItem = true
                         feedback.impactOccurred()
                     }, label: {
                         Image(systemName: "plus.app")
+                            .resizable()
+                            .scaledToFit()
                             .foregroundColor(comandinhaOrange)
-                            .frame(width: 38, height: 38)
+                            .frame(width: 20, height: 20)
+                            .padding(.trailing, 20)
                     })
                 }
                 

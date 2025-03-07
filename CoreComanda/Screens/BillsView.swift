@@ -43,9 +43,18 @@ struct BillsView: View {
                                 .foregroundColor(comandinhaOrange)
                                 .font(.headline)
                                 .fontWeight(.bold)
-                            Text("\(bill.formattedDate)".capitalized)
-                                .font(.caption)
-                                .fontWeight(.light)
+                            HStack {
+                                Text("\(bill.formattedDate)".capitalized)
+                                    .font(.caption)
+                                    .fontWeight(.light)
+                                
+                                Spacer()
+                                
+                                Text("\(String(format: "R$ %.2f", bill.unwrappedTotal))")
+                                    .font(.caption)
+                                    .fontWeight(.light)
+                            }
+
                         })
                         .onTapGesture {
                             feedback.impactOccurred()

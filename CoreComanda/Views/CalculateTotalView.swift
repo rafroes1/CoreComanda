@@ -23,6 +23,7 @@ struct CalculateTotalView: View {
         }
         
         totalBillPrice = totalBillPrice * servicePercentage[selectedServiceTax]!
+        selectedBill.lastTotal = totalBillPrice
     }
     
     

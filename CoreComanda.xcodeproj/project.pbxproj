@@ -28,6 +28,7 @@
 		898F759C29B7982E0050DE6A /* NewProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759B29B7982E0050DE6A /* NewProductItemView.swift */; };
 		898F759E29B7B8200050DE6A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759D29B7B8200050DE6A /* CounterView.swift */; };
 		898F75A029BA6F6E0050DE6A /* CalculateTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F759F29BA6F6E0050DE6A /* CalculateTotalView.swift */; };
+		89B8A0192D0D1F600034E4AF /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8A0182D0D1F600034E4AF /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		898F759B29B7982E0050DE6A /* NewProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductItemView.swift; sourceTree = "<group>"; };
 		898F759D29B7B8200050DE6A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		898F759F29BA6F6E0050DE6A /* CalculateTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTotalView.swift; sourceTree = "<group>"; };
+		89B8A0182D0D1F600034E4AF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				898F759129B77AEC0050DE6A /* Constants.swift */,
 				898F759929B788470050DE6A /* HideKeyboardExtension.swift */,
+				89B8A0182D0D1F600034E4AF /* ViewExtension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				89421D4C29B24133009E21C2 /* ProductsView.swift in Sources */,
 				898F759429B77CE30050DE6A /* BillsView.swift in Sources */,
 				89421D5429B685A6009E21C2 /* Products+CoreDataProperties.swift in Sources */,
+				89B8A0192D0D1F600034E4AF /* ViewExtension.swift in Sources */,
 				89421D5329B685A6009E21C2 /* Products+CoreDataClass.swift in Sources */,
 				898F759629B784000050DE6A /* BlankView.swift in Sources */,
 				898F759229B77AEC0050DE6A /* Constants.swift in Sources */,
@@ -384,7 +388,9 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Comandinha;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -416,7 +422,9 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Comandinha;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
